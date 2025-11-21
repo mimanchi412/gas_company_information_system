@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: gas_company_information_system_backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/gas
+    username: root
+    password: 191599
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  flyway:
+    enabled: false
+    locations: classpath:db/migration
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 2000
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  mail:
+    host: smtp.163.com
+    username: boardgameforai@163.com
+    password: UKv3DD4yxAguwDZi
+    port: 465
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+
+security:
+  jwt:
+    secret: change-me-demo-secret
+    expiration-minutes: 120
+
+email:
+  code:
+    expire-minutes: 5
+  queue: email-codes
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true

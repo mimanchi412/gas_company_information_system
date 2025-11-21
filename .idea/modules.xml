@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Gas_Company_Information_System.iml" filepath="$PROJECT_DIR$/Gas_Company_Information_System.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gas_company_information_system_frontend/gas_company_information_system_frontend.iml" filepath="$PROJECT_DIR$/gas_company_information_system_frontend/gas_company_information_system_frontend.iml" />
+    </modules>
+  </component>
+</project>
